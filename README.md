@@ -10,3 +10,5 @@
 
 #FotoPP
 
+#CV
+![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/Cuplikan_layar_resized.png?raw=true)
