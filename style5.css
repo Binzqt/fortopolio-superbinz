@@ -11,9 +11,9 @@
 }
 
 
-@media screen and (max-width:406px) {
+@media screen and (max-width:480px) {
     .ab {
-        margin-left: 227px;
+        margin-left: 220px;
        
     }
 }
