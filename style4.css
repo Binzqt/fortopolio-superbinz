@@ -29,3 +29,13 @@ p {
     justify-content: space-between;
     align-items: flex-start;
 }
+
+@media only screen and (max-width:480px) {
+    .bio {
+        text-align: justify;
+    }
+    .kepala {
+        margin-top: 12px;
+        margin-bottom: 30px;
+    }
+}
