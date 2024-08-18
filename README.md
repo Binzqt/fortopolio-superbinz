@@ -4,7 +4,7 @@
 ![alt text](https://github.com/Binzqt/website-superbinz/blob/main/LOGO%20DEWEK.png?raw=true)
 
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/IMG_0429.jpeg?raw=true)
-![alt text](?raw=true)
+![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/IMG_0430.jpeg?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
 
