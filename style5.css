@@ -1,13 +1,19 @@
 .ab {
     margin-left: 100px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 .card-text {
     text-align: center;
+}
+.ba {
+    color: rgb(44, 115, 230);
+
 }
 
 
 @media screen and (max-width:576px) {
     .ab {
         margin-left: 160px;
+       
     }
 }
