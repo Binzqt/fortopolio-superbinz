@@ -62,7 +62,7 @@ h3
 }
 
 
-@media only screen and (max-width:480px) {
+@media screen and (max-width:480px) {
     .muka {
       margin-left: 27.5%;
     }
