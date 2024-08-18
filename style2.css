@@ -60,3 +60,9 @@ h3
     max-height: 40px; /* Adjust the height of the logo as needed */
     margin-right: 10px; /* Adjust the space between the logo and the text */
 }
+
+@media only screen and (max-width:480px) {
+    .muka {
+      margin-left: 30%;
+    }
+}
