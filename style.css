@@ -79,3 +79,17 @@ margin-top: 35px;
 .kpl {
     margin-top: 8px;
 }
+
+@media only screen and (max-width:480px) {
+    .green-button {
+        margin-left:175px;
+    }
+    .text {
+        flex: 1;
+    margin-left: 145px;
+    }
+    .left {
+        margin-left: 12px;
+    }
+
+}
