@@ -3,6 +3,11 @@
 ![alt text](https://github.com/Binzqt/website-superbinz/blob/main/Gambar%20WhatsApp%202024-07-18%20pukul%2015.32.28_bc25eb7e.jpg?raw=true)
 ![alt text](https://github.com/Binzqt/website-superbinz/blob/main/LOGO%20DEWEK.png?raw=true)
 
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+
 
 #Logo
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/LOGO%20DEWEK.png?raw=true)
