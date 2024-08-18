@@ -1,32 +1,62 @@
-.muka {
-    margin-top: 30px;
-    margin-left: 44%;
-    width: 200px;
-    height: 200px ;
- border-radius: 50%;
- object-fit: cover;
+@media only screen and (min-width:1024px) {
+    h1 {
+    font-family: Arial, Helvetica, sans-serif;
+
 }
 
-.bio {
-    font-family:  'Calibri',  sans-serif;
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    padding-bottom: 0px;
 }
-.aa {
- margin-left: 8px;
+
+.text {
+   
+    margin-left: 175px;
+    flex: 1;
+    margin-right: 20px;
+
 }
-.bb {
- margin-left: 8px;
+
+.image img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px; /* Optional: to add rounded corners */
 }
-p {
-     margin-left: 8px;
+
+h5 {
+margin-top: 35px;
 }
-h3
- {
-     margin-left: 6px;
+.amba {
+        line-height: 27px;
 }
-.logo {
-    border-radius: 50%;
+.left {
+    flex: 1;
+    margin-right: 200px;
+    margin-left: 290px;
+    font-family: Georgia, 'Times New Roman', Times, serif
 }
- 
+.navbar-nav .nav-link {
+    margin-right: 20px; /* Adjust the value as needed */
+}
+
+.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
+    margin-right: 20px; /* Adjust the value as needed */
+}
+/* styles.css */
+.navbar-brand {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand .logo {
+    max-height: 40px; /* Adjust the height of the logo as needed */
+    margin-right: 10px; /* Adjust the space between the logo and the text */
+}
+
+/* styles.css */
 .green-button {
     margin-left: 290px;
     display: inline-block;
@@ -43,26 +73,24 @@ h3
 .green-button:hover {
     background-color: #218838; /* Darker green on hover */
 }
-.navbar-nav .nav-link {
-    margin-right: 20px; /* Adjust the value as needed */
+.logo {
+    border-radius: 50%;
 }
-
-.navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
-    margin-right: 20px; /* Adjust the value as needed */
+.kpl {
+    margin-top: 8px;
 }
-/* styles.css */
-.navbar-brand {
-    display: flex;
-    align-items: cnter;
-}
-
-.navbar-brand .logo {
-    max-height: 40px; /* Adjust the height of the logo as needed */
-    margin-right: 10px; /* Adjust the space between the logo and the text */
 }
 
 @media only screen and (max-width:480px) {
-    .muka {
-      margin-left: 27%;
+    .green-button {
+        margin-left:175px;
     }
+    .text {
+        flex: 1;
+    margin-left: 145px;
+    }
+    .left {
+        margin-left: 12px;
+    }
+
 }
