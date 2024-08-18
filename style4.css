@@ -1,3 +1,4 @@
+@media only screen and (min-width:1024px) {
 .kepala {
     text-align: center;
     line-height: 6px;
@@ -29,6 +30,9 @@ p {
     justify-content: space-between;
     align-items: flex-start;
 }
+}
+
+
 
 @media only screen and (max-width:480px) {
     .bio {
