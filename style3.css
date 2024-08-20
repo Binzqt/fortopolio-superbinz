@@ -28,7 +28,12 @@
 border-color: rgb(58, 150, 255);
   transform: scale(1.05);
 }
-
+.ab {
+    margin-left: 270px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+     color: rgb(44, 115, 230);
+     margin-bottom: 47px;
+}
 
 @media (max-width: 576px) {
     .d-flex {
@@ -50,9 +55,16 @@ border-color: rgb(58, 150, 255);
 }
 
 .d-grid {
-  margin-top: -15rem;
+  margin-top: -10rem;
 }
+.ab {
+        margin-left: 160px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+    }
+
+
+
     
 }    
     
-}
+
