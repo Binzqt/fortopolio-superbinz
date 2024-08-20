@@ -9,6 +9,9 @@
     color: rgb(44, 115, 230);
 
 }
+.d-grid {
+    margin-top: 212px;
+}
 
 
 @media screen and (max-width:430px) {
