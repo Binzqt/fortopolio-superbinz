@@ -45,5 +45,8 @@ border-color: rgb(58, 150, 255);
   border-color: rgb(58, 150, 255);
   transform: scale(1.05);
 }
+.card {
+    margin-bottom: 3rem; /* Mengatur jarak antar kartu */
+}
 
 }
