@@ -89,5 +89,38 @@ margin-top: 35px;
     .left {
         margin-left: 12px;
     }
+    .container {
+        flex-direction: column;
+        align-items: flex-start; /* Atur konten menjadi vertikal dan rata ke kiri */
+        text-align: left;
+    }
 
+    .text {
+        text-align: left; /* Teks bergeser ke kiri */
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 28px;
+        text-align: left; /* Teks heading bergeser ke kiri */
+    }
+
+    p.amba {
+        font-size: 16px;
+        text-align: left; /* Teks paragraf bergeser ke kiri */
+    }
+
+    .image img {
+        max-width: 400px; /* Ukuran gambar tetap pada layar kecil */
+        height: auto;
+    }
+
+    .navbar {
+        text-align: center;
+    }
+
+    .green-button {
+        display: block;
+        margin: 20px 0;
+    }
 }
