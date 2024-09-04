@@ -7,6 +7,9 @@
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/IMG_0430.jpeg?raw=true)
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/IMG_0432.jpeg?raw=true)
 ![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
 
 
 #Logo
