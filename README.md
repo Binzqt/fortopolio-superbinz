@@ -6,7 +6,7 @@
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/IMG_0429.jpeg?raw=true)
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/IMG_0430.jpeg?raw=true)
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/IMG_0432.jpeg?raw=true)
-![alt text](?raw=true)
+![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/resized_image_1193x651.png?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
