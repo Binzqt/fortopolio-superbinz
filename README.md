@@ -10,7 +10,12 @@
 ![alt text](?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
-
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
+![alt text](?raw=true)
 
 #Logo
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/LOGO%20DEWEK.png?raw=true)
