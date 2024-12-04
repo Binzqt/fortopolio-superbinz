@@ -28,11 +28,12 @@
 border-color: rgb(58, 150, 255);
   transform: scale(1.05);
 }
+
 .ab {
     margin-left: 270px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
      color: rgb(44, 115, 230);
-     margin-bottom: 47px;
+     margin-bottom: 27px;
 }
 .d-grid {
   margin-top: 170px;
@@ -42,7 +43,7 @@ border-color: rgb(58, 150, 255);
     .d-flex {
       flex-direction: column;
       align-items: center;
-      gap: 10px ;
+      gap: 10px;
     }
     .custom-card {
   border: 2px solid transparent;
@@ -54,9 +55,8 @@ border-color: rgb(58, 150, 255);
   transform: scale(1.05);
 }
 .card {
-    margin-bottom: 2rem; /* Mengatur jarak antar kartu */
+    margin-bottom: 3rem; /* Mengatur jarak antar kartu */
 }
-
 .d-grid {
   margin-top: 1rem;
 }
@@ -65,9 +65,4 @@ border-color: rgb(58, 150, 255);
            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
     }
 
-
-
-    
-}    
-    
-
+}
