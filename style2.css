@@ -26,6 +26,12 @@ h3
 .logo {
     border-radius: 50%;
 }
+.pei {
+    font-family: 'Edu Australia VIC WA NT Hand Precursive';
+     color: rgb(73, 53, 53); 
+    font-style: italic;
+    letter-spacing: 3px;
+}
  
 .green-button {
     margin-left: 290px;
@@ -67,6 +73,6 @@ h3
 
 @media screen and (max-width:576px) {
     .muka {
-        margin-left: 25.5%;
+        margin-left: 28%;
     }
 }
