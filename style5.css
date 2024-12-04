@@ -2,6 +2,10 @@
     margin-left: 100px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+.padding {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}    
 .card-text {
     text-align: center;
 }
@@ -10,14 +14,14 @@
 
 }
 .d-grid {
-    margin-top: 212px;
+    margin-top: 50px;
+    
 }
 
-
-@media screen and (max-width:430px) {
+@media screen and (max-width:576px) {
     .ab {
-        margin-left: 100px;
-         font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        margin-left: 160px;
+           font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
        
     }
 }
