@@ -1,148 +1,163 @@
-
 h1 {
-    font-family: Arial, Helvetica, sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
 }
-
+.jumbotron {
+  background-color: #f8f9fa;
+}
 .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    padding-bottom: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  padding-bottom: 0px;
+  margin-left: 140px;
+  margin-top: 70px;
 }
 
 .text {
-   
-    margin-left: 175px;
-    flex: 1;
-    margin-right: 20px;
-
+  margin-left: 175px;
+  flex: 1;
+  margin-right: 20px;
 }
-
 .image img {
-    max-width: 60%;
-    height: auto;
-    border-radius: 10px; /* Optional: to add rounded corners */
+  max-width: 60%;
+  height: auto;
+  border-radius: 10px; /* Optional: to add rounded corners */
 }
 
 h5 {
-margin-top: 35px;
+  margin-top: 35px;
 }
 .amba {
-        line-height: 27px;
+  line-height: 27px;
 }
 .left {
-    flex: 1;
-    margin-right: 200px;
-    margin-left: 290px;
-    font-family: Georgia, 'Times New Roman', Times, serif
+  flex: 1;
+  margin-right: 200px;
+  margin-left: 290px;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 .navbar-nav .nav-link {
-    margin-right: 20px; /* Adjust the value as needed */
+  margin-right: 20px; /* Adjust the value as needed */
 }
 
 .navbar-nav .nav-item.dropdown .dropdown-menu .dropdown-item {
-    margin-right: 20px; /* Adjust the value as needed */
+  margin-right: 20px; /* Adjust the value as needed */
 }
 /* styles.css */
 .navbar-brand {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .navbar-brand .logo {
-    max-height: 40px; /* Adjust the height of the logo as needed */
-    margin-right: 10px; /* Adjust the space between the logo and the text */
+  max-height: 40px; /* Adjust the height of the logo as needed */
+  margin-right: 10px; /* Adjust the space between the logo and the text */
 }
 
 /* styles.css */
 .green-button {
-    margin-left: 310px;
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: #28a745; /* Green background */
-    color: white; /* White text */
-    text-align: center;
-    text-decoration: none;
-    border-radius: 18px; /* Rounded corners */
-    font-size: 16px; /* Font size */
-    transition: background-color 0.3s ease; /* Transition for hover effect */
+  margin-left: 350px;
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #28a745; /* Green background */
+  color: white; /* White text */
+  text-align: center;
+  text-decoration: none;
+  border-radius: 18px; /* Rounded corners */
+  font-size: 16px; /* Font size */
+  transition: background-color 0.3s ease; /* Transition for hover effect */
 }
 
 .green-button:hover {
-    background-color: #218838; /* Darker green on hover */
+  background-color: #218838; /* Darker green on hover */
 }
 .logo {
-    border-radius: 50%;
+  border-radius: 50%;
 }
 .kpl {
-    margin-top: 8px;
+  margin-top: 8px;
 }
 .amba {
-    text-align: justify;
-    width: 300px;
-    color: rgb(73, 53, 53);
+  text-align: justify;
+  width: 300px;
+  color: rgb(73, 53, 53);
 }
 .baam {
-    width: 300px;
+  width: 300px;
 }
 .fort {
-    font-family: 'Edu Australia VIC WA NT Hand Precursive';
-    color: rgb(73, 53, 53);
-    font-style: italic;
-    letter-spacing: 6.5px;
-    text-decoration: underline;
+  font-family: "Edu Australia VIC WA NT Hand Precursive";
+  color: rgb(73, 53, 53);
+  font-style: italic;
+  letter-spacing: 6.5px;
+  text-decoration: underline;
 }
 .beranda {
-    text-align: center;
-    font-style: italic;
-    color: rgb(73, 53, 53);
+  text-align: center;
+  font-style: italic;
+  color: rgb(73, 53, 53);
 }
-@media screen and (max-width:576px) {
-    .green-button {
-        margin-left:175px;
-    }
-    .text {
-        flex: 1;
+.berandi {
+    text-align: center;
+    
+}
+.mi {
+  border-radius: 40px;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
+  float: left;
+}
+.mib {
+  margin-top: 65px;
+  margin-right: 15px;
+  text-align: justify;
+  text-indent: 42px;
+}
+@media screen and (max-width: 576px) {
+  .green-button {
+    margin-left: 175px;
+  }
+  .text {
+    flex: 1;
     margin-left: 145px;
-    }
-    .left {
-        margin-left: 12px;
-    }
-     .container {
-        flex-direction: column;
-        align-items: flex-start; /* Atur konten menjadi vertikal dan rata ke kiri */
-        text-align: left;
-    }
+  }
+  .left {
+    margin-left: 12px;
+  }
+  .container {
+    flex-direction: column;
+    align-items: flex-start; /* Atur konten menjadi vertikal dan rata ke kiri */
+    text-align: left;
+  }
 
-    .text {
-        text-align: left; /* Teks bergeser ke kiri */
-        margin-bottom: 20px;
-    }
+  .text {
+    text-align: left; /* Teks bergeser ke kiri */
+    margin-bottom: 20px;
+  }
 
-    h1 {
-        font-size: 28px;
-        text-align: left; /* Teks heading bergeser ke kiri */
-    }
+  h1 {
+    font-size: 28px;
+    text-align: left; /* Teks heading bergeser ke kiri */
+  }
 
-    p.amba {
-        font-size: 16px;
-        text-align: left; /* Teks paragraf bergeser ke kiri */
-    }
+  p.amba {
+    font-size: 16px;
+    text-align: left; /* Teks paragraf bergeser ke kiri */
+  }
 
-    .image img {
-        max-width: 400px; /* Ukuran gambar tetap pada layar kecil */
-        height: auto;
-    }
+  .image img {
+    max-width: 400px; /* Ukuran gambar tetap pada layar kecil */
+    height: auto;
+  }
 
-    .navbar {
-        text-align: center;
-    }
+  .navbar {
+    text-align: center;
+  }
 
-    .green-button {
-        display: block;
-        margin: 20px 0;
-    }
-
+  .green-button {
+    display: block;
+    margin: 20px 0;
+  }
 }
