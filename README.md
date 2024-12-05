@@ -16,7 +16,7 @@
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/icons8-mysql-logo-480.png?raw=true)
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/icons8-php-logo-480.png?raw=true)
 ![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/Resized_Cuplikan_Layar_1193x651_v2.png?raw=true)
-![alt text](?raw=true)
+![alt text](https://github.com/Binzqt/fortopolio-superbinz/blob/main/Gambar%20WhatsApp%202024-12-06%20pukul%2000.19.37_0a37ed52.jpg?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
 ![alt text](?raw=true)
