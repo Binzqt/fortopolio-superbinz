@@ -94,6 +94,11 @@ margin-top: 35px;
     letter-spacing: 6.5px;
     text-decoration: underline;
 }
+.beranda {
+    text-align: center;
+    font-style: italic;
+    color: rgb(73, 53, 53);
+}
 @media screen and (max-width:576px) {
     .green-button {
         margin-left:175px;
