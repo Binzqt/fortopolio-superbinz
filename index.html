@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Template</title>
+    <title>Fortpolio | Muhammad Bintang</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <link rel="icon" href="PPGKF_circular.ico" type="image/x-icon" />
@@ -13,71 +13,147 @@
         body {
             font-family: 'Poppins', sans-serif;
         }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+      .neon-text {
+        position: relative;
+        color: #0d47a1; /* Warna biru gelap */
+        text-shadow: 
+            0 0 5px #0d47a1, 
+            0 0 10px #0d47a1, 
+            0 0 15px #0d47a1, 
+            0 0 20px #0d47a1;
+    }   
+
     </style>
 </head>
 
-<body class="bg-gray-50">
-    <!-- Header -->
-    <header class="bg-gradient-to-r from-blue-500 to-indigo-500 text-white py-6 shadow-md">
-        <div class="container mx-auto px-4 flex justify-between items-center">
-            <h1 class="text-2xl font-bold">Super Binz</h1>
-            <nav>
-                <ul class="flex space-x-6">
-                    <li><a href="#" class="hover:underline">About</a></li>
-                    <li><a href="https://linktr.ee/SuperBinzzz" class="hover:underline">Linktree</a></li>
-                    <li><a href="#" class="hover:underline">Blog</a></li>
+<body class="bg-gray-900 text-white">
 
-                </ul>
+    <!-- Header -->
+    <header class="bg-gray-800 text-white py-6 shadow-md">
+        <div class="container mx-auto px-4 flex justify-between items-center">
+            <!-- Logo -->
+            <h1 class="text-2xl font-bold">
+                <span class="text-blue-400">Super</span> Binz
+            </h1>
+            <!-- Desktop Menu -->
+            <nav class="hidden md:flex space-x-6">
+                <a href="#about" class="text-gray-300 font-bold hover:text-blue-400">About</a>
+                <a href="#" class="text-gray-300 font-bold hover:text-blue-400">Blog</a>
             </nav>
+            <!-- Hamburger Menu Icon (Mobile) -->
+            <button id="menu-button" class="text-2xl md:hidden focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
         </div>
+
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden fixed inset-0 bg-gray-900 bg-opacity-95 z-50 flex flex-col items-start p-8">
+            <!-- Close Button -->
+            <button id="close-menu" class="self-end mb-6 text-2xl text-white focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                    stroke="currentColor" class="w-8 h-8">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+            <ul class="w-full text-left space-y-4">
+                <li class="border-b border-gray-700">
+                    <a href="#about" class="block py-4 text-gray-300 font-bold hover:text-blue-400">About</a>
+                </li>
+                <li class="border-b border-gray-700">
+                    <a href="#" class="block py-4 text-gray-300 font-bold hover:text-blue-400">Blog</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
+
+    <!-- Hero Section -->
+    <section id="home" class="min-h-screen flex items-center">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+            <!-- Foto di bagian atas pada mode mobile -->
+            <div class="flex justify-center md:order-last">
+                <div class="w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-blue-500">
+                    <img src="IMG_2480_033144-min.JPG" alt="Your Photo" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <!-- Teks di bawah pada mode mobile -->
+            <div class="text-center md:text-left">
+                <h1 class="text-5xl lg:text-7xl font-bold mb-4">
+                    Hi, I'm <span class="text-blue-400 neon-text">Muhammad Bintang</span>
+                </h1>
+                <p class="text-lg lg:text-2xl text-gray-300 mb-6">
+                    I'm a web developer with a passion for creating stunning and functional websites.
+                </p>
+                <div class="flex justify-center md:justify-start space-x-4">
+                    <a href="https://sociabuzz.com/superbinzzz"
+                        class="px-8 py-4 lg:px-12 lg:py-6 bg-blue-500 rounded-lg font-semibold hover:bg-blue-700 text-lg lg:text-xl">
+                        Support Me
+                    </a>
+                    <a href="https://linktr.ee/SuperBinzzz"
+                        class="px-8 py-4 lg:px-12 lg:py-6 border border-blue-500 rounded-lg font-semibold text-blue-500 hover:bg-blue-500 hover:text-white text-lg lg:text-xl">
+                        Contact
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
 
     <div class="container mx-auto px-4 py-10">
         <!-- Portfolio Section -->
-        <h1 class="text-2xl font-bold text-center text-gray-800 mb-8">Hi ! , I'm Muhammad Bintang</h1>
+        <h1 id="about" class="text-4xl font-bold text-center text-blue-400 mb-8 neon-text">About Me</h1>
 
         <!-- Top Row -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <!-- Card 1 -->
             <div
-                class="bg-white shadow-lg rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                class="bg-gray-800 shadow-lg rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
                 <!-- Image Section -->
                 <div class="bg-gray-200 h-48 flex items-center justify-center rounded-md mb-6 overflow-hidden">
-                    <img src="resized_image_1193x651.png" alt="Profile Image"
-                        class="w-full h-full object-cover">
+                    <img src="resized_image_1193x651.png" alt="Profile Image" class="w-full h-full object-cover">
                 </div>
 
                 <!-- Title -->
-                <h2 class="text-xl font-semibold text-gray-800 mb-4">
-                    <a href="index2.html" class="text-blue-500 hover:underline">Profile</a>
+                <h2 class="text-xl font-semibold text-white mb-4">
+                    <a href="index2.html" class="text-blue-400 hover:underline">Profile</a>
                 </h2>
 
                 <!-- Description -->
-                <p class="text-gray-600 text-base">
+                <p class="text-gray-300 text-base">
                     It's very easy to create stylish and beautiful prototypes for your future projects.
                 </p>
             </div>
 
-
+            <!-- Card 2 -->
             <div
-                class="bg-white shadow-lg rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                class="bg-gray-800 shadow-lg rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
                 <!-- Image Section -->
                 <div class="bg-gray-200 h-48 flex items-center justify-center rounded-md mb-6 overflow-hidden">
                     <img src="resized_new_image_1193x651.png" alt="Profile Image" class="w-full h-full object-cover">
                 </div>
 
                 <!-- Title -->
-                <h2 class="text-xl font-semibold text-gray-800 mb-4">
-                    <a href="index3.html" class="text-blue-500 hover:underline">Curriculum Vitae</a>
+                <h2 class="text-xl font-semibold text-white mb-4">
+                    <a href="index3.html" class="text-blue-400 hover:underline">Curriculum Vitae</a>
                 </h2>
 
                 <!-- Description -->
-                <p class="text-gray-600 text-base">
+                <p class="text-gray-300 text-base">
                     It's very easy to create stylish and beautiful prototypes for your future projects.
                 </p>
             </div>
 
+            <!-- Card 3 -->
             <div
-                class="bg-white shadow-lg rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+                class="bg-gray-800 shadow-lg rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
                 <!-- Image Section -->
                 <div class="bg-gray-200 h-48 flex items-center justify-center rounded-md mb-6 overflow-hidden">
                     <img src="Cuplikan_layar_resized_1193x651.png" alt="Profile Image"
@@ -85,19 +161,18 @@
                 </div>
 
                 <!-- Title -->
-                <h2 class="text-xl font-semibold text-gray-800 mb-4">
-                    <a href="index4.html" class="text-blue-500 hover:underline">My Projects</a>
+                <h2 class="text-xl font-semibold text-white mb-4">
+                    <a href="index4.html" class="text-blue-400 hover:underline">My Projects</a>
                 </h2>
 
                 <!-- Description -->
-                <p class="text-gray-600 text-base">
+                <p class="text-gray-300 text-base">
                     It's very easy to create stylish and beautiful prototypes for your future projects.
                 </p>
             </div>
-
         </div>
-
     </div>
+
 
     <!-- Footer -->
     <footer class="bg-gray-800 text-white py-6 mt-10">
@@ -111,5 +186,23 @@
         </div>
     </footer>
 </body>
+
+<script>
+    // DOM Elements
+    const menuButton = document.getElementById('menu-button');
+    const closeButton = document.getElementById('close-menu');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    // Open Menu (Mobile Only)
+    menuButton.addEventListener('click', () => {
+        mobileMenu.classList.remove('hidden');
+    });
+
+    // Close Menu (Mobile Only)
+    closeButton.addEventListener('click', () => {
+        mobileMenu.classList.add('hidden');
+    });
+</script>
+
 
 </html>
