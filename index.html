@@ -28,6 +28,34 @@
                 0 0 15px #0d47a1,
                 0 0 20px #0d47a1;
         }
+
+        .custom-border-dashed {
+            border-style: solid;
+            /* Mengubah border menjadi solid */
+            border-width: 2px;
+            /* Ketebalan garis border */
+            border-color: #B22222;
+            /* Warna border menjadi merah gelap */
+            border-radius: 9999px;
+            /* Menjaga border tetap melengkung */
+            position: relative;
+            animation: neonGlow 1.5s ease-in-out infinite alternate;
+            /* Efek neon dengan animasi */
+
+            /* Menambahkan box shadow untuk efek neon */
+            box-shadow: 0 0 5px #B22222, 0 0 10px #B22222, 0 0 20px #B22222, 0 0 40px #B22222;
+        }
+
+        /* Animasi untuk efek neon glow */
+        @keyframes neonGlow {
+            0% {
+                box-shadow: 0 0 5px #B22222, 0 0 10px #B22222, 0 0 20px #B22222, 0 0 40px #B22222;
+            }
+
+            100% {
+                box-shadow: 0 0 10px #B22222, 0 0 20px #B22222, 0 0 40px #B22222, 0 0 60px #B22222;
+            }
+        }
     </style>
 </head>
 
@@ -85,10 +113,10 @@
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <!-- Foto di bagian atas pada mode mobile -->
             <div class="flex justify-center mb-8 md:mb-0 md:order-last">
-                <div
-                    class="w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden border-4 border-blue-500 border-dashed">
+                <div class="w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden border-solid custom-border-dashed">
                     <img src="IMG_2480_033144-min.JPG" alt="Your Photo" class="w-full h-full object-cover">
                 </div>
+
             </div>
             <!-- Teks di bawah pada mode mobile -->
             <div class="text-center md:text-left">
@@ -140,13 +168,17 @@
 
     <div class="container mx-auto px-4 py-10 mb-16">
         <!-- Portfolio Section -->
-        <h1 id="about" class="text-4xl font-bold text-center text-blue-400 mb-8 neon-text">About Me</h1>
+        <h1 id="about"
+            class="text-4xl font-bold text-center text-blue-400 mb-8 neon-text opacity-0 translate-x-[-50px] transition duration-500"
+            data-animate-left>
+            About Me
+        </h1>
 
         <!-- Top Row -->
         <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
             <!-- Card 1 -->
-            <div
-                class="bg-gray-800 shadow-lg rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-center transform transition duration-500 hover:scale-105 opacity-0 translate-x-[-50px]"
+                data-animate-left>
                 <!-- Image Section -->
                 <div class="bg-gray-200 h-48 flex items-center justify-center rounded-md mb-6 overflow-hidden">
                     <img src="resized_image_1193x651.png" alt="Profile Image" class="w-full h-full object-cover">
@@ -154,7 +186,7 @@
 
                 <!-- Title -->
                 <h2 class="text-xl font-semibold text-white mb-4">
-                    <a href="index2.html" class="text-blue-400 hover:underline">Profile</a>
+                    <a href="index2.html" class="text-blue-400 underline hover:text-blue-500">Profile</a>
                 </h2>
 
                 <!-- Description -->
@@ -164,8 +196,8 @@
             </div>
 
             <!-- Card 2 -->
-            <div
-                class="bg-gray-800 shadow-lg rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-center transform transition duration-500 hover:scale-105 opacity-0 translate-x-[-50px]"
+                data-animate-left>
                 <!-- Image Section -->
                 <div class="bg-gray-200 h-48 flex items-center justify-center rounded-md mb-6 overflow-hidden">
                     <img src="resized_new_image_1193x651.png" alt="Profile Image" class="w-full h-full object-cover">
@@ -173,18 +205,19 @@
 
                 <!-- Title -->
                 <h2 class="text-xl font-semibold text-white mb-4">
-                    <a href="index3.html" class="text-blue-400 hover:underline">Curriculum Vitae</a>
+                    <a href="index3.html" class="text-blue-400 underline hover:text-blue-500">Curriculum Vitae</a>
                 </h2>
 
                 <!-- Description -->
                 <p class="text-gray-300 text-base">
-                    Dive into my professional experiences, achievements, and milestones that showcase my dedication and growth.
+                    Dive into my professional experiences, achievements, and milestones that showcase my dedication and
+                    growth.
                 </p>
             </div>
 
             <!-- Card 3 -->
-            <div
-                class="bg-gray-800 shadow-lg rounded-lg p-6 text-center transform transition duration-300 hover:scale-105">
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6 text-center transform transition duration-500 hover:scale-105 opacity-0 translate-x-[-50px]"
+                data-animate-left>
                 <!-- Image Section -->
                 <div class="bg-gray-200 h-48 flex items-center justify-center rounded-md mb-6 overflow-hidden">
                     <img src="Cuplikan_layar_resized_1193x651.png" alt="Profile Image"
@@ -193,7 +226,7 @@
 
                 <!-- Title -->
                 <h2 class="text-xl font-semibold text-white mb-4">
-                    <a href="index4.html" class="text-blue-400 hover:underline">My Projects</a>
+                    <a href="index4.html" class="text-blue-400 underline hover:text-blue-500">My Projects</a>
                 </h2>
 
                 <!-- Description -->
@@ -204,10 +237,12 @@
         </div>
     </div>
 
+
     <!-- Skills Bar -->
     <main class="max-w-4xl mx-auto py-10 mb-16">
         <section>
-            <h2 id="skills" class="text-center text-3xl font-bold text-blue-400 neon-text">Technical and Professional</h2>
+            <h2 id="skills" class="text-center text-3xl font-bold text-blue-400 neon-text">Technical and Professional
+            </h2>
 
             <!-- Wrapper with spacing -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-20">
@@ -307,11 +342,11 @@
                                 <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
                                     <circle class="text-gray-700" stroke="currentColor" stroke-width="3" fill="none"
                                         r="16" cx="18" cy="18" />
-                                    <circle class="text-blue-500" stroke="currentColor" stroke-width="3"
+                                    <circle class="text-blue-400" stroke="currentColor" stroke-width="3"
                                         stroke-dasharray="65,100" fill="none" r="16" cx="18" cy="18" />
                                 </svg>
                                 <span
-                                    class="absolute inset-0 flex items-center justify-center text-blue-500 font-bold">65%</span>
+                                    class="absolute inset-0 flex items-center justify-center text-blue-400 font-bold">65%</span>
                             </div>
                             <p class="mt-2">Project Management</p>
                         </div>
@@ -335,67 +370,70 @@
     </main>
 
 
-<!-- Certificate Section -->
-<div class="container mx-auto px-4 py-10">
-    <h1 id="certificate" class="text-4xl font-bold text-center text-blue-400 mb-8 neon-text">Certificate</h1>
-    <p class="text-center text-gray-300 mb-8">
-        These certificates represent our dedication to continuous learning and professional growth. Each one highlights
-        our commitment to excellence and expertise in our respective fields.
-    </p>
-    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-        <!-- Card 1 -->
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105">
-            <!-- Image for Certificate -->
-            <div class="flex items-center justify-center w-32 h-24 mx-auto mb-4">
-                <img src="Cuplikan layar 2024-09-04 191806.png" alt="Certificate 1" class="w-full h-full object-cover">
+    <!-- Certificate Section -->
+    <div class="container mx-auto px-4 py-10">
+        <h1 id="certificate" class="text-4xl font-bold text-center text-blue-400 mb-8 neon-text">Certificate</h1>
+        <p class="text-center text-gray-300 mb-8">
+            These certificates represent our dedication to continuous learning and professional growth. Each one
+            highlights
+            our commitment to excellence and expertise in our respective fields.
+        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Card 1 -->
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105">
+                <!-- Image for Certificate -->
+                <div class="flex items-center justify-center w-32 h-24 mx-auto mb-4">
+                    <img src="Cuplikan layar 2024-09-04 191806.png" alt="Certificate 1"
+                        class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-xl font-bold text-center text-white mb-2">Certificate of Completion</h2>
+                <p class="text-gray-300 text-center mb-4">
+                    This certificate recognizes the successful completion of a specialized training program, showcasing
+                    dedication and achievement.
+                </p>
+                <!-- Button for full view -->
+                <div class="text-center">
+                    <button onclick="showImage('Cuplikan layar 2024-09-04 191806.png')"
+                        class="px-4 py-2 bg-blue-400 text-white font-semibold rounded hover:bg-blue-500">
+                        View Full Image
+                    </button>
+                </div>
             </div>
-            <h2 class="text-xl font-bold text-center text-white mb-2">Certificate of Completion</h2>
-            <p class="text-gray-300 text-center mb-4">
-                This certificate recognizes the successful completion of a specialized training program, showcasing
-                dedication and achievement.
-            </p>
-            <!-- Button for full view -->
-            <div class="text-center">
-                <button onclick="showImage('Cuplikan layar 2024-09-04 191806.png')"
-                    class="px-4 py-2 bg-blue-400 text-white font-semibold rounded hover:bg-blue-500">
-                    View Full Image
-                </button>
-            </div>
-        </div>
-        <!-- Card 2 -->
-        <div class="bg-gray-800 shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105">
-            <!-- Image for Certificate -->
-            <div class="flex items-center justify-center w-32 h-24 mx-auto mb-4">
-                <img src="Gambar WhatsApp 2025-01-24 pukul 15.57.08_495212b9.jpg" alt="Certificate 2"
-                    class="w-full h-full object-cover">
-            </div>
-            <h2 class="text-xl font-bold text-center text-white mb-2">Professional Development</h2>
-            <p class="text-gray-300 text-center mb-4">
-                This certificate is a testament to professional excellence, earned through focused training and skill
-                development in technology and management.
-            </p>
-            <!-- Button for full view -->
-            <div class="text-center">
-                <button onclick="showImage('Gambar WhatsApp 2025-01-24 pukul 15.57.08_495212b9.jpg')"
-                    class="px-4 py-2 bg-blue-400 text-white font-semibold rounded hover:bg-blue-500">
-                    View Full Image
-                </button>
+            <!-- Card 2 -->
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105">
+                <!-- Image for Certificate -->
+                <div class="flex items-center justify-center w-32 h-24 mx-auto mb-4">
+                    <img src="Gambar WhatsApp 2025-01-24 pukul 15.57.08_495212b9.jpg" alt="Certificate 2"
+                        class="w-full h-full object-cover">
+                </div>
+                <h2 class="text-xl font-bold text-center text-white mb-2">Professional Development</h2>
+                <p class="text-gray-300 text-center mb-4">
+                    This certificate is a testament to professional excellence, earned through focused training and
+                    skill
+                    development in technology and management.
+                </p>
+                <!-- Button for full view -->
+                <div class="text-center">
+                    <button onclick="showImage('Gambar WhatsApp 2025-01-24 pukul 15.57.08_495212b9.jpg')"
+                        class="px-4 py-2 bg-blue-400 text-white font-semibold rounded hover:bg-blue-500">
+                        View Full Image
+                    </button>
+                </div>
             </div>
         </div>
     </div>
-</div>
 
 
-        <!-- Modal for Image Full View -->
-        <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
-            <div class="relative">
-                <img id="modalImage" src="" alt="Certificate Image" class="max-w-full max-h-screen rounded">
-                <button onclick="hideImage()"
-                    class="absolute top-4 right-4 text-white bg-red-500 px-4 py-2 rounded font-semibold hover:bg-red-600">
-                    Back
-                </button>
-            </div>
+    <!-- Modal for Image Full View -->
+    <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
+        <div class="relative">
+            <img id="modalImage" src="" alt="Certificate Image" class="max-w-full max-h-screen rounded">
+            <button onclick="hideImage()"
+                class="absolute top-4 right-4 text-white bg-red-500 px-4 py-2 rounded font-semibold hover:bg-red-600">
+                Back
+            </button>
         </div>
+    </div>
     </div>
 
     <footer class="bg-gray-800 text-white py-12">
@@ -473,6 +511,58 @@
         document.getElementById('imageModal').classList.add('hidden');
         document.getElementById('modalImage').src = '';
     }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll("[data-animate-left]");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Tambahkan animasi saat elemen terlihat
+                        entry.target.classList.add("opacity-100", "translate-x-0");
+                        entry.target.classList.remove("opacity-0", "translate-x-[-50px]");
+                    } else {
+                        // Reset animasi saat elemen keluar dari viewport
+                        entry.target.classList.remove("opacity-100", "translate-x-0");
+                        entry.target.classList.add("opacity-0", "translate-x-[-50px]");
+                    }
+                });
+            },
+            {
+                threshold: 0.1, // Mulai animasi ketika 10% elemen terlihat
+            }
+        );
+
+        elements.forEach((el) => observer.observe(el));
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+        const elements = document.querySelectorAll("[data-animate-left]");
+
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        // Tambahkan animasi saat elemen terlihat
+                        entry.target.classList.add("opacity-100", "translate-x-0");
+                        entry.target.classList.remove("opacity-0", "translate-x-[-50px]");
+                    } else {
+                        // Reset animasi saat elemen keluar dari viewport
+                        entry.target.classList.remove("opacity-100", "translate-x-0");
+                        entry.target.classList.add("opacity-0", "translate-x-[-50px]");
+                    }
+                });
+            },
+            {
+                threshold: 0.1, // Mulai animasi ketika 10% elemen terlihat
+            }
+        );
+
+        // Mengamati semua elemen dengan data-animate-left (termasuk "About Me")
+        elements.forEach((el) => observer.observe(el));
+    });
+
 </script>
 
 
