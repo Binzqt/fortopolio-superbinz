@@ -21,7 +21,6 @@
         .neon-text {
             position: relative;
             color: #0d47a1;
-            /* Warna biru gelap */
             text-shadow:
                 0 0 5px #0d47a1,
                 0 0 10px #0d47a1,
@@ -32,15 +31,12 @@
 
         .neon-text2 {
             color: #ffffff;
-            /* Warna putih */
             text-shadow:
                 0 0 5px #00B5D6,
-                /* Glow cyan gelap */
                 0 0 10px #00B5D6;
             animation: neonMove2 1.5s infinite alternate;
         }
 
-        /* Animasi untuk efek neon bergerak */
         @keyframes neonMove {
             0% {
                 text-shadow:
@@ -89,19 +85,12 @@
 
         .custom-border-dashed {
             border-style: solid;
-            /* Border solid */
             border-width: 2px;
-            /* Ketebalan border */
             border-color: #B22222;
-            /* Warna border merah gelap */
             border-radius: 9999px;
-            /* Membuat lingkaran */
             position: relative;
-
-            /* Shadow default */
             box-shadow: 0 0 10px #B22222, 0 0 20px #B22222, 0 0 40px #B22222;
             transition: box-shadow 0.5s ease;
-            /* Transisi halus untuk shadow */
         }
 
         .custom-border-dashed:hover {
@@ -224,9 +213,8 @@
         </div>
     </section>
 
-
+    <!-- About Me -->
     <div class="container mx-auto px-4 py-10 mb-16">
-        <!-- Portfolio Section -->
         <h1 id="about"
             class="text-4xl font-bold text-center text-blue-400 mb-8 neon-text opacity-0 translate-x-[-50px] transition duration-500"
             data-animate-left>
@@ -303,7 +291,6 @@
             <h2 id="skills" class="text-center text-3xl font-bold text-cyan-400 neon-text2">Technical and Professional
             </h2>
 
-            <!-- Wrapper with spacing -->
             <div class="grid grid-cols-1 md:grid-cols-2 gap-20 mt-20">
                 <!-- Technical Skills -->
                 <div>
@@ -484,8 +471,6 @@
         </div>
     </div>
 
-
-
     <!-- Modal for Image Full View -->
     <div id="imageModal" class="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center hidden">
         <div class="relative">
@@ -549,7 +534,6 @@
 </body>
 
 <script>
-    // DOM Elements
     const menuButton = document.getElementById('menu-button');
     const closeButton = document.getElementById('close-menu');
     const mobileMenu = document.getElementById('mobile-menu');
@@ -588,7 +572,7 @@
                 });
             },
             {
-                threshold: 0.1 // Akan bereaksi saat 10% section terlihat
+                threshold: 0.1,
             }
         );
 
@@ -602,22 +586,19 @@
             (entries) => {
                 entries.forEach((entry) => {
                     if (entry.isIntersecting) {
-                        // Tambahkan animasi saat elemen terlihat
                         entry.target.classList.add("opacity-100", "translate-x-0");
                         entry.target.classList.remove("opacity-0", "translate-x-[-50px]");
                     } else {
-                        // Reset animasi saat elemen keluar dari viewport
                         entry.target.classList.remove("opacity-100", "translate-x-0");
                         entry.target.classList.add("opacity-0", "translate-x-[-50px]");
                     }
                 });
             },
             {
-                threshold: 0.1, // Mulai animasi ketika 10% elemen terlihat
+                threshold: 0.1,
             }
         );
 
-        // Mengamati semua elemen dengan data-animate-left (termasuk "About Me")
         elements.forEach((el) => observer.observe(el));
     });
 
