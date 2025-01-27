@@ -56,7 +56,8 @@
                 box-shadow: 0 0 10px #B22222, 0 0 20px #B22222, 0 0 40px #B22222, 0 0 60px #B22222;
             }
         }
-          .fade-section {
+
+        .fade-section {
             opacity: 0;
             transition: opacity 1.8s ease-in-out;
         }
@@ -145,7 +146,7 @@
     </section>
 
     <!-- Stats Section -->
-     <section class="fade-section py-12 bg-gray-900 -mt-16">
+    <section class="fade-section py-12 bg-gray-900 -mt-16">
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
@@ -242,7 +243,7 @@
 
 
     <!-- Skills Bar -->
-    <main class="max-w-4xl mx-auto py-10 mb-16">
+    <main class="max-w-4xl mx-auto py-10 mb-16 -mt-16">
         <section>
             <h2 id="skills" class="text-center text-3xl font-bold text-blue-400 neon-text">Technical and Professional
             </h2>
@@ -372,19 +373,23 @@
         </section>
     </main>
 
-
-    <!-- Certificate Section -->
+    <!-- Certificate -->
     <div class="container mx-auto px-4 py-10">
-        <h1 id="certificate" class="text-4xl font-bold text-center text-blue-400 mb-8 neon-text">Certificate</h1>
-        <p class="text-center text-gray-300 mb-8">
+        <h1 id="certificate"
+            class="text-4xl font-bold text-center text-blue-400 mb-8 neon-text opacity-0 translate-x-[-50px] transition duration-500"
+            data-animate-left>
+            Certificate
+        </h1>
+        <p class="text-center text-gray-300 mb-8 opacity-0 translate-x-[-50px] transition duration-500"
+            data-animate-left>
             These certificates represent our dedication to continuous learning and professional growth. Each one
             highlights
             our commitment to excellence and expertise in our respective fields.
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Card 1 -->
-            <div class="bg-gray-800 shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105">
-                <!-- Image for Certificate -->
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6 transform opacity-0 translate-x-[-50px] transition duration-500"
+                data-animate-left>
                 <div class="flex items-center justify-center w-32 h-24 mx-auto mb-4">
                     <img src="Cuplikan layar 2024-09-04 191806.png" alt="Certificate 1"
                         class="w-full h-full object-cover">
@@ -394,7 +399,6 @@
                     This certificate recognizes the successful completion of a specialized training program, showcasing
                     dedication and achievement.
                 </p>
-                <!-- Button for full view -->
                 <div class="text-center">
                     <button onclick="showImage('Cuplikan layar 2024-09-04 191806.png')"
                         class="px-4 py-2 bg-blue-400 text-white font-semibold rounded hover:bg-blue-500">
@@ -403,8 +407,8 @@
                 </div>
             </div>
             <!-- Card 2 -->
-            <div class="bg-gray-800 shadow-lg rounded-lg p-6 transform transition duration-300 hover:scale-105">
-                <!-- Image for Certificate -->
+            <div class="bg-gray-800 shadow-lg rounded-lg p-6 transform opacity-0 translate-x-[-50px] transition duration-500"
+                data-animate-left>
                 <div class="flex items-center justify-center w-32 h-24 mx-auto mb-4">
                     <img src="Gambar WhatsApp 2025-01-24 pukul 15.57.08_495212b9.jpg" alt="Certificate 2"
                         class="w-full h-full object-cover">
@@ -415,7 +419,6 @@
                     skill
                     development in technology and management.
                 </p>
-                <!-- Button for full view -->
                 <div class="text-center">
                     <button onclick="showImage('Gambar WhatsApp 2025-01-24 pukul 15.57.08_495212b9.jpg')"
                         class="px-4 py-2 bg-blue-400 text-white font-semibold rounded hover:bg-blue-500">
@@ -425,6 +428,7 @@
             </div>
         </div>
     </div>
+
 
 
     <!-- Modal for Image Full View -->
@@ -515,26 +519,26 @@
         document.getElementById('modalImage').src = '';
     }
 
-      document.addEventListener('DOMContentLoaded', () => {
-            const section = document.querySelector('.fade-section');
-            
-            const observer = new IntersectionObserver(
-                (entries) => {
-                    entries.forEach(entry => {
-                        if (entry.isIntersecting) {
-                            entry.target.style.opacity = '1';
-                        } else {
-                            entry.target.style.opacity = '0';
-                        }
-                    });
-                },
-                {
-                    threshold: 0.1 // Akan bereaksi saat 10% section terlihat
-                }
-            );
+    document.addEventListener('DOMContentLoaded', () => {
+        const section = document.querySelector('.fade-section');
 
-            observer.observe(section);
-        });
+        const observer = new IntersectionObserver(
+            (entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                    } else {
+                        entry.target.style.opacity = '0';
+                    }
+                });
+            },
+            {
+                threshold: 0.1 // Akan bereaksi saat 10% section terlihat
+            }
+        );
+
+        observer.observe(section);
+    });
 
     document.addEventListener("DOMContentLoaded", () => {
         const elements = document.querySelectorAll("[data-animate-left]");
