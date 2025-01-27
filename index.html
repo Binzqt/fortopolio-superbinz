@@ -89,30 +89,23 @@
 
         .custom-border-dashed {
             border-style: solid;
-            /* Mengubah border menjadi solid */
+            /* Border solid */
             border-width: 2px;
-            /* Ketebalan garis border */
+            /* Ketebalan border */
             border-color: #B22222;
-            /* Warna border menjadi merah gelap */
+            /* Warna border merah gelap */
             border-radius: 9999px;
-            /* Menjaga border tetap melengkung */
+            /* Membuat lingkaran */
             position: relative;
-            animation: neonGlow 1.5s ease-in-out infinite alternate;
-            /* Efek neon dengan animasi */
 
-            /* Menambahkan box shadow untuk efek neon */
-            box-shadow: 0 0 5px #B22222, 0 0 10px #B22222, 0 0 20px #B22222, 0 0 40px #B22222;
+            /* Shadow default */
+            box-shadow: 0 0 10px #B22222, 0 0 20px #B22222, 0 0 40px #B22222;
+            transition: box-shadow 0.5s ease;
+            /* Transisi halus untuk shadow */
         }
 
-        /* Animasi untuk efek neon glow */
-        @keyframes neonGlow {
-            0% {
-                box-shadow: 0 0 5px #B22222, 0 0 10px #B22222, 0 0 20px #B22222, 0 0 40px #B22222;
-            }
-
-            100% {
-                box-shadow: 0 0 10px #B22222, 0 0 20px #B22222, 0 0 40px #B22222, 0 0 60px #B22222;
-            }
+        .custom-border-dashed:hover {
+            box-shadow: 0 0 20px #B22222, 0 0 40px #B22222, 0 0 80px #B22222, 0 0 100px #B22222;
         }
 
         .fade-section {
@@ -177,9 +170,12 @@
         <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
             <!-- Foto di bagian atas pada mode mobile -->
             <div class="flex justify-center mb-8 md:mb-0 md:order-last">
-                <div class="w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden border-solid custom-border-dashed">
+                <div
+                    class="image-container w-64 h-64 lg:w-96 lg:h-96 rounded-full overflow-hidden border-solid custom-border-dashed">
                     <img src="IMG_2480_033144-min.JPG" alt="Your Photo" class="w-full h-full object-cover">
                 </div>
+
+
 
             </div>
             <!-- Teks di bawah pada mode mobile -->
@@ -209,19 +205,19 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
                 <div>
-                    <h1 class="text-4xl font-bold text-blue-400">2</h1>
+                    <h1 class="text-4xl font-bold text-cyan-400">2</h1>
                     <p class="text-gray-300">Years of Experience</p>
                 </div>
                 <div>
-                    <h1 class="text-4xl font-bold text-blue-400">3</h1>
+                    <h1 class="text-4xl font-bold text-cyan-400">3</h1>
                     <p class="text-gray-300">Projects Completed</p>
                 </div>
                 <div>
-                    <h1 class="text-4xl font-bold text-blue-400">6</h1>
+                    <h1 class="text-4xl font-bold text-cyan-400">6</h1>
                     <p class="text-gray-300">Technologies Mastered</p>
                 </div>
                 <div>
-                    <h1 class="text-4xl font-bold text-blue-400">500</h1>
+                    <h1 class="text-4xl font-bold text-cyan-400">500</h1>
                     <p class="text-gray-300">Code Commits</p>
                 </div>
             </div>
@@ -304,11 +300,11 @@
     <!-- Skills Bar -->
     <main class="max-w-4xl mx-auto py-10 mb-16 -mt-16">
         <section>
-            <h2 id="skills" class="text-center text-3xl font-bold text-blue-400 neon-text">Technical and Professional
+            <h2 id="skills" class="text-center text-3xl font-bold text-cyan-400 neon-text2">Technical and Professional
             </h2>
 
             <!-- Wrapper with spacing -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mt-20">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-20 mt-20">
                 <!-- Technical Skills -->
                 <div>
                     <h4 class="text-xl font-bold mb-6">Technical Skills</h4>
@@ -319,7 +315,7 @@
                                 <span>80%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-blue-400 h-2 rounded-full" style="width: 80%;"></div>
+                                <div class="bg-cyan-400 h-2 rounded-full" style="width: 80%;"></div>
                             </div>
                         </div>
                         <div>
@@ -328,7 +324,7 @@
                                 <span>80%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-blue-400 h-2 rounded-full" style="width: 80%;"></div>
+                                <div class="bg-cyan-400 h-2 rounded-full" style="width: 80%;"></div>
                             </div>
                         </div>
                         <div>
@@ -337,7 +333,7 @@
                                 <span>40%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-blue-400 h-2 rounded-full" style="width: 40%;"></div>
+                                <div class="bg-cyan-400 h-2 rounded-full" style="width: 40%;"></div>
                             </div>
                         </div>
                         <div>
@@ -346,7 +342,7 @@
                                 <span>20%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-blue-400 h-2 rounded-full" style="width: 20%;"></div>
+                                <div class="bg-cyan-400 h-2 rounded-full" style="width: 20%;"></div>
                             </div>
                         </div>
                         <div>
@@ -355,7 +351,7 @@
                                 <span>80%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-blue-400 h-2 rounded-full" style="width: 80%;"></div>
+                                <div class="bg-cyan-400 h-2 rounded-full" style="width: 80%;"></div>
                             </div>
                         </div>
                         <div>
@@ -364,7 +360,7 @@
                                 <span>70%</span>
                             </div>
                             <div class="w-full bg-gray-700 rounded-full h-2">
-                                <div class="bg-blue-400 h-2 rounded-full" style="width: 70%;"></div>
+                                <div class="bg-cyan-400 h-2 rounded-full" style="width: 70%;"></div>
                             </div>
                         </div>
                     </div>
@@ -379,11 +375,11 @@
                                 <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
                                     <circle class="text-gray-700" stroke="currentColor" stroke-width="3" fill="none"
                                         r="16" cx="18" cy="18" />
-                                    <circle class="text-blue-400" stroke="currentColor" stroke-width="3"
+                                    <circle class="text-cyan-400" stroke="currentColor" stroke-width="3"
                                         stroke-dasharray="90,100" fill="none" r="16" cx="18" cy="18" />
                                 </svg>
                                 <span
-                                    class="absolute inset-0 flex items-center justify-center text-blue-400 font-bold">90%</span>
+                                    class="absolute inset-0 flex items-center justify-center text-cyan-400 font-bold">90%</span>
                             </div>
                             <p class="mt-2">Team Work</p>
                         </div>
@@ -392,11 +388,11 @@
                                 <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
                                     <circle class="text-gray-700" stroke="currentColor" stroke-width="3" fill="none"
                                         r="16" cx="18" cy="18" />
-                                    <circle class="text-blue-400" stroke="currentColor" stroke-width="3"
+                                    <circle class="text-cyan-400" stroke="currentColor" stroke-width="3"
                                         stroke-dasharray="65,100" fill="none" r="16" cx="18" cy="18" />
                                 </svg>
                                 <span
-                                    class="absolute inset-0 flex items-center justify-center text-blue-400 font-bold">65%</span>
+                                    class="absolute inset-0 flex items-center justify-center text-cyan-400 font-bold">65%</span>
                             </div>
                             <p class="mt-2">Creativity</p>
                         </div>
@@ -405,11 +401,11 @@
                                 <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
                                     <circle class="text-gray-700" stroke="currentColor" stroke-width="3" fill="none"
                                         r="16" cx="18" cy="18" />
-                                    <circle class="text-blue-400" stroke="currentColor" stroke-width="3"
+                                    <circle class="text-cyan-400" stroke="currentColor" stroke-width="3"
                                         stroke-dasharray="65,100" fill="none" r="16" cx="18" cy="18" />
                                 </svg>
                                 <span
-                                    class="absolute inset-0 flex items-center justify-center text-blue-400 font-bold">65%</span>
+                                    class="absolute inset-0 flex items-center justify-center text-cyan-400 font-bold">65%</span>
                             </div>
                             <p class="mt-2">Project Management</p>
                         </div>
@@ -418,11 +414,11 @@
                                 <svg class="w-full h-full transform -rotate-90" viewBox="0 0 36 36">
                                     <circle class="text-gray-700" stroke="currentColor" stroke-width="3" fill="none"
                                         r="16" cx="18" cy="18" />
-                                    <circle class="text-blue-400" stroke="currentColor" stroke-width="3"
+                                    <circle class="text-cyan-400" stroke="currentColor" stroke-width="3"
                                         stroke-dasharray="75,100" fill="none" r="16" cx="18" cy="18" />
                                 </svg>
                                 <span
-                                    class="absolute inset-0 flex items-center justify-center text-blue-400 font-bold">75%</span>
+                                    class="absolute inset-0 flex items-center justify-center text-cyan-400 font-bold">75%</span>
                             </div>
                             <p class="mt-2">Communication</p>
                         </div>
